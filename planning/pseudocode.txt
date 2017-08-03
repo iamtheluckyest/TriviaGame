@@ -1,0 +1,24 @@
+Trivia Pseudocode:
+- questions array with each question as an object
+	- question
+	- answers
+		- correct: true/false
+	- image
+	- fact
+	- usedQuestion: true/false; toggle so that questions aren't reused
+- randomize questions
+	- put all questions in an array
+	- shuffle array
+- display question and answers
+	- answers need ul/li -- append? with radio buttons?
+- setInterval
+	//setTimeout might make more sense;
+	- need timer to decrease
+	- 2 intervals?? --don't speed up time
+	- if interval reaches 0, alert time is up, display answer and increase wrong answer count
+- Receive incorrect/correct answer and move to answer page
+	- increase incorrect/correct count
+- After ten questions report score and offer to restart game
+	- need start() function
+
+	

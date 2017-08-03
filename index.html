@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies Trivia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Asap|Copse" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="game-name">
+			<div class="container-theme">
+				<h1>Movies Trivia</h1>
+			</div>
+		</div>
+
+		<div class="qa-container">
+			<div class="container-theme">
+				<div class="questions-container">
+					<div class="bottom">
+						<h2 id="q-header">Welcome!</h2>
+						<div id="question">Click to begin the quiz!</div>
+					</div>
+				</div>
+				
+				<!-- <hr> -->
+				<div class="answers-container">
+					<form id="answers">
+					</form>
+					<div id="displayAnswer">
+						<h2 id="a-header">You are correct!</h2>
+						<div id="correct-answer"></div>
+						<div class="fact-container clearfix">
+							<img src="http://via.placeholder.com/150x200" alt="" id="correct-img">
+							<h2>Did you know?</h2>
+							<p id="fact"></p>
+							<button class="btn" id="next-question">Next question</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="stats">
+			<div class="container-theme">
+				<h2 id="stats-header">Stats</h2>
+				<p id="stat-correct">Correct answers: 0</p>
+				<p id="stat-incorrect">Incorrect answers: 0</p>
+				<p id="qs-left">Questions left: </p>
+				<p>Time remaining</p>
+				<div id="timer-border">
+					<div id="inner-timer"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div> <!-- End .container-->
+
+	<!-- credits!!
+	Questions from http://laffgaff.com/movie-trivia-questions-answers/ -->
+
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
